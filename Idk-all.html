@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h1>IDK/#all</h1>
+    <h4>DIS PLACE EMPTY</h4>
+    <h4>FILL 'ER  UP!</h4>
+    <p id="display"></p><br><br><br><br><br><br><br><br><br><br><br><br></p><br><br><br><br><br><br><br><br><br><br><br><br></p><br><br><br><br><br><br><br><br><br><br><br><br>
+   <label for="inp">Type here:</label>
+   <input type="text" id="uinp"/>
+   <button type="button" onclick="getInputValue()">SEND IT!</button>
+    
+   <script>
+    function getInputValue() {
+      let inputValue = document.getElementById("uinp").value;
+      localStorage.setItem("txtinp",inputValue);
+      let output = localStorage.getItem("txtinp");
+      document.getElementById("display").innerHTML = output;
+    }
+    </script>
+    <h6>i tried.</h6>
+  </body>
+</html>
